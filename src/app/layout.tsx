@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Book List',
-  description: '本の一覧',
+  title: 'Photo List',
+  description: '写真の一覧',
 }
 
 export default function RootLayout({
@@ -16,7 +16,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header>
+          <h1>Photos List</h1>
+        </header>
+        <div className='mx-auto '>
+          {children}
+        </div>
+      </body>
     </html>
   )
 }

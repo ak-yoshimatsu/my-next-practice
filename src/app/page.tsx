@@ -1,9 +1,17 @@
+import LinkedList from '@/components/photos/LinkedList';
+import { getPhotos } from '@/lib/api/getter'
 import Image from 'next/image'
 
-export default function Home() {
+export const dynamic = 'force-daynamic';
+
+export default async function Home() {
+  const photos = await getPhotos()
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Book List
+    <main>
+      {photos.map(photo => {
+        return <LinkedList photo={photo} key={photo.id} />
+      })}
     </main>
   )
 }
