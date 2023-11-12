@@ -5,7 +5,7 @@ import { PhotoProps } from '@/types/photo';
 
 const LinkedList = ({ photo }: { photo: PhotoProps }) => {
   return (
-    <Link href={`detail/${photo.id}`}>
+    <Link href={`photos/${photo.id}`}>
       <div className="group hover:bg-sky-500 hover:rounded-lg">
         <Detail photo={photo} />
       </div>
