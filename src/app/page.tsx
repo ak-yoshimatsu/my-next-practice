@@ -1,6 +1,5 @@
 import LinkedList from '@/components/photos/LinkedList';
 import { getPhotos } from '@/lib/api/getter'
-import Image from 'next/image'
 
 export const dynamic = 'force-daynamic';
 

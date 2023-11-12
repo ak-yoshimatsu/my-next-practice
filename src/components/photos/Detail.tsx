@@ -19,8 +19,7 @@ const Detail = ({ photo }: { photo: PhotoProps }) => {
         <ul className="list-none text-black ml-4 group-hover:text-white">
           <li>{photo.id && photo.id + '.'}</li>
           <li>title: {photo.title}</li>
-          <li>URL: <Link className='underline decoration-sky-500'
-            href={photo.url} target='_blank' rel='noopener'>{photo.url}</Link></li>
+          <li>URL: {photo.url}</li>
         </ul>
       </div>
     </div>

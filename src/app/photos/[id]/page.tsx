@@ -1,4 +1,5 @@
 import Detail from '@/components/photos/Detail';
+import Store from '@/components/photos/Store';
 import { getPhotoById } from '@/lib/api/getter';
 import React from 'react';
 
@@ -12,6 +13,8 @@ const PhotoDetail = async ({ params }: Props) => {
   return (
     <div>
       <Detail photo={photo} />
+      <hr />
+      <Store photo={photo} />
     </div>
   );
 };
