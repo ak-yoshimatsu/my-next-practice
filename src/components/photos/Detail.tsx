@@ -4,7 +4,7 @@ import { PhotoProps } from '@/types/photo';
 
 const Detail = ({ photo }: { photo: PhotoProps }) => {
   return (
-    <div className="flex w-full mb-4" >
+    <div className="flex w-full mb-4">
       <div>
         <Image
           src={photo.thumbnailUrl}
@@ -15,7 +15,7 @@ const Detail = ({ photo }: { photo: PhotoProps }) => {
         />
       </div>
       <div>
-        <ul className="list-none text-black ml-4">
+        <ul className="list-none text-black ml-4 group-hover:text-white">
           <li>{photo.id && photo.id + '.'}</li>
           <li>title: {photo.title}</li>
           <li>URL: {photo.url}</li>
