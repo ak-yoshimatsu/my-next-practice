@@ -30,21 +30,21 @@ const SpaIndex = () => {
       setValue({...value, ...data})
     })
 
-    const res1 = getDetail()
-    res1.then(data => {
-      const validate = indexApiSchema.safeParse(data);
-      if (!validate.success) {
-        throw new Error("apiのレスポンス情報が不正です。");
-      }
-      // try {
-      //   indexApiSchema.parse(data)
-      //   console.log(data);
-      // } catch (error) {
-      //   if (error instanceof z.ZodError) {
-      //     console.error(error.message);
-      //   }
-      // }
-    })
+    // const res1 = getDetail()
+    // res1.then(data => {
+    //   const validate = indexApiSchema.safeParse(data);
+    //   if (!validate.success) {
+    //     throw new Error("apiのレスポンス情報が不正です。");
+    //   }
+    //   // try {
+    //   //   indexApiSchema.parse(data)
+    //   //   console.log(data);
+    //   // } catch (error) {
+    //   //   if (error instanceof z.ZodError) {
+    //   //     console.error(error.message);
+    //   //   }
+    //   // }
+    // })
   }, [])
 
   return (
