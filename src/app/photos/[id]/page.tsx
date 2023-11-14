@@ -1,7 +1,6 @@
 import Detail from '@/components/photos/Detail';
 import Store from '@/components/photos/Store';
-import { getPhotoById } from '@/lib/api/getter';
-import React from 'react';
+import { getPhotoById } from '@/lib/api/photos/getter';
 
 type Props = {
   params: { id: number }
@@ -9,7 +8,7 @@ type Props = {
 
 const PhotoDetail = async ({ params }: Props) => {
   const photo = await getPhotoById(params.id)
-  
+
   return (
     <div>
       <Detail photo={photo} />
