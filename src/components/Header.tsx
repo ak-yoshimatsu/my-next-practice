@@ -3,9 +3,9 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className='bg-sky-500 text-white text-2xl p-5'>
+    <header className="bg-sky-500 text-white text-2xl p-5">
       <h1>
-        <Link href='/'>Photos List</Link>
+        <Link href="/">Photos List</Link>
       </h1>
     </header>
   );

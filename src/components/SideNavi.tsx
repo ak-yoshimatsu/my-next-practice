@@ -9,9 +9,13 @@ const SideNavi = () => {
   ];
 
   return (
-    <div className='pl-[20px] bg-sky-100'>
-      {navigation.map(({ id, href, name}) => {
-        return <Link key={id} href={href} className='ml-5'>{name}</Link>
+    <div className="pl-[20px] bg-sky-100">
+      {navigation.map(({ id, href, name }) => {
+        return (
+          <Link key={id} href={href} className="ml-5">
+            {name}
+          </Link>
+        );
       })}
     </div>
   );

@@ -1,6 +1,15 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "plugin:storybook/recommended"
-  ]
+    "plugin:storybook/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react"],
+  "rules": {
+    "eqeqeq": "error",
+    "no-console": "warn",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-uses-react": "error",
+    "prettier/prettier": "error"
+  }
 }

@@ -1,7 +1,7 @@
 export type PhotoProps = {
-  albumId: number,
-  id: number,
-  title: string,
-  url: string,
-  thumbnailUrl: string,
-}
+  albumId: number;
+  id: number;
+  title: string;
+  url: string;
+  thumbnailUrl: string;
+};

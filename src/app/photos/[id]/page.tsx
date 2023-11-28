@@ -3,11 +3,11 @@ import Store from '@/components/photos/Store';
 import { getPhotoById } from '@/lib/api/photos/getter';
 
 type Props = {
-  params: { id: number }
-}
+  params: { id: number };
+};
 
 const PhotoDetail = async ({ params }: Props) => {
-  const photo = await getPhotoById(params.id)
+  const photo = await getPhotoById(params.id);
 
   return (
     <div>
