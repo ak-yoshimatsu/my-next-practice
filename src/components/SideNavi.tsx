@@ -6,6 +6,7 @@ const SideNavi = () => {
     { id: 1, name: 'photos', href: '/' },
     { id: 2, name: 'spa', href: '/spa' },
     { id: 3, name: 'profile', href: '/profile' },
+    { id: 4, name: 'cms', href: '/cms' },
   ];
 
   return (
